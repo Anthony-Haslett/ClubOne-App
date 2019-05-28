@@ -1,0 +1,140 @@
+/* # Core CSS */
+
+/* Layout CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;  ;
+  font-size: 1em;
+  color:#101010
+}
+
+/* # Headings CSS */
+
+/* # Paragraph CSS */
+
+/* # Button CSS */
+
+/* # Links CSS */
+
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* List Styling */
+
+/* # Images CSS */
+
+/* # Tables CSS */
+
+/* # Layout CSS */
+
+/* # Responsive CSS */
+
+/* Component Styling */
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#0892d0;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+/*  */
+
+/* Style the header */
+header {
+  background-color: #0892d0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0892d0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
