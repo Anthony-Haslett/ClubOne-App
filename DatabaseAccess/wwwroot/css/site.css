@@ -1,12 +1,16 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: grey;
+    background: #1A1A1A;
+    color: white;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
+    font-size: 1.5em;   
     padding-left: 15px;
     padding-right: 15px;
 }

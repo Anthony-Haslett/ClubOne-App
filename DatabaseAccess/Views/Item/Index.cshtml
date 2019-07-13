@@ -1,31 +1,25 @@
-﻿@model IEnumerable<todo.Models.Item>
+﻿@model IEnumerable<todo.Models.Item>;
 
 @{
     ViewBag.Title = "Song Requests";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<!-- <img src="../../wwwroot/images/logo.png"/> -->
+
 <h2>Song requests</h2>
 
 <p class="button">
-    @Html.ActionLink("Request song", "Create")
-</p>
-
-<p class="button">
-    @Html.ActionLink("User", "Create")
-</p>
-
-<p class="button">
-    @Html.ActionLink("Dj", "Create")
+    @Html.ActionLink("Request a new song", "Create")
 </p>
 
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            <p>Artist name</p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            <p>Song name</p>
         </th>
         <th></th>
     </tr>
@@ -39,7 +33,7 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Remove", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
