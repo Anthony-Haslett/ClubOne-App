@@ -1,0 +1,6 @@
+# Ignore .dll files
+*.dll
+
+*.pdb
+
+*.cache
